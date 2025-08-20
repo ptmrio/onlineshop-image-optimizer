@@ -2,7 +2,25 @@
 
 Convert PNG product images into multiple formats and sizes with smart padding options. Perfect for e-commerce and online shops.
 
-## Quick Setup
+**Automatic Language Support**: English & German (based on your system language)
+
+## Download & Run
+
+### Option 1: Download Executable (Easiest)
+```bash
+# Download from GitHub Releases
+# https://github.com/ptmrio/onlineshop-image-optimizer/releases
+# Double-click ProductImageOptimizer.exe to run
+```
+
+### Option 2: Run from Source
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+python optimize.py
+```
 
 ```bash
 # Install Python dependencies
@@ -79,6 +97,7 @@ python optimize.py --folder "/path/to/images" --padding small
 
 ## Features
 
+- ✅ **Auto language detection** - English & German support
 - ✅ **Smart file selection** - Auto-detects single/multiple files
 - ✅ **Batch processing** - Handle entire folders
 - ✅ **Smart trimming** - Removes transparent areas
@@ -87,11 +106,23 @@ python optimize.py --folder "/path/to/images" --padding small
 - ✅ **Progress tracking** - Real-time feedback
 - ✅ **Error handling** - Clear error messages
 
+## Building Executable (For Developers)
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Build executable
+pyinstaller --onefile --windowed --name=ProductImageOptimizer optimize.py
+
+# Output: dist/ProductImageOptimizer.exe
+```
+
 ## Requirements
 
 ```bash
 # Python 3.7+
-# Pillow (PIL)
+# See requirements.txt for dependencies
 ```
 
 ## License
